@@ -1,0 +1,20 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main ()
+{
+    int hours;
+    int min;
+    int sec;
+    int x;
+    cout << "Time in Seconds" << endl;
+    cout << "Enter Hours" << endl;
+    cin >> hours;
+    cout << "Enter Minutes" << endl;
+    cin >> min;
+    cout << "Enter Seconds" << endl;
+    cin >> sec;
+    x = hours*3600 + min*60 + sec;
+    cout << "Seconds:" << x << endl;
+    return 0;
+}
