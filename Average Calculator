@@ -1,0 +1,16 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+ int a,b,c;
+ cout << "Enter first subject marks" << endl;
+ cin >> a;
+ cout << "Second subject" << endl;
+ cin >> b;
+ cout <<  "Third subject" << endl;
+ cin >> c;
+ double d;
+ d=a+b+c/2;
+ cout << "Average:" << d << endl;
+ return 0;
+}
