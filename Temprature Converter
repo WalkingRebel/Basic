@@ -1,0 +1,14 @@
+#include <iostream>
+#include <cmath>
+using namespace std;
+int main ()
+{
+    int celcius;
+    int farenheit;
+    cout << "Celcius To Farenheit Converter" << endl;
+    cout << "Enter the temprature:" << endl;
+    cin >> celcius;
+    farenheit = 1.8*celcius+32;
+    cout << "Temprature in Farenheit is:" << farenheit << endl;
+    return 0;
+}
