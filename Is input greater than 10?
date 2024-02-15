@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+int main ()
+{
+    int a;
+    cout << "Is it greater than 10?" << endl;
+    cout << "Enter the number" << endl;
+    cin >> a;
+    if(a>10)
+    {
+        cout<< "Yes,it is." << endl;
+    }
+    else
+    {
+        cout <<  "No,it's not." << endl;
+    }
+    return 0;
+}
