@@ -1,1 +1,18 @@
-This file will help you understand loops
+#include <iostream>
+using namespace std;
+int main()
+{
+ int a;
+ cout << "Even and Odd indentifier" << endl;
+ cout << "Enter your number" << endl;
+ cin >> a;
+ if(a%2==0)
+ {
+  cout << "Even" << endl;
+ }
+ else
+ {
+ cout << "Odd" << endl;
+ }
+return 0;
+}
