@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+unsigned long long factorial(int num) {
+    if (num == 0 || num == 1)
+        return 1;
+    unsigned long long fact = 1;
+    for (int i = 2; i <= num; ++i) {
+        fact *= i;
+    }
+    return fact;
+}
+
+int main() {
+    int x;
+    cout << "Enter any non-negative integer: ";
+    cin >> x;
+    
+    if (x < 0) {
+        cout << "Factorial is not defined for negative numbers." << endl;
+        return 1;
+    }
+
+    unsigned long long fact = factorial(x);
+    cout << "Factorial of " << x << " is " << fact << endl;
+
+    return 0;
+}
+
