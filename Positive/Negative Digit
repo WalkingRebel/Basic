@@ -1,0 +1,36 @@
+#include <iostream> 
+using namespace std; 
+int main() 
+
+{ 
+
+  int a; 
+  cout << "Enter any digit" << endl; 
+  cin >> a; 
+  if(a>0) 
+  { 
+
+    cout << "Your digit is positive" << endl; 
+
+   } 
+
+   else if(a<0) 
+
+  { 
+
+  cout << "Your digit is negative" << endl; 
+
+  } 
+
+  else if (a=0) 
+
+  { 
+
+  cout << "Your digit is equal to zero" << endl; 
+
+  } 
+
+return 0; 
+
+} 
+
