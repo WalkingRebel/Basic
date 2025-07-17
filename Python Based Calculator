@@ -1,0 +1,53 @@
+def Add(x, y):
+    return x + y
+
+def Subtract(x, y):
+    return x - y
+
+def Multiply(x, y):
+    return x * y
+
+def Divide(x, y):
+    if y != 0:
+        return x / y
+    else:
+        return "Error: Cannot divide by zero."
+
+def Percentage(x, y):
+    if y != 0:
+        return (x * 100) / y
+    else:
+        return "Error: Cannot calculate percentage (division by zero)."
+
+def calculator():
+    print("Python based Basic Calculator:")
+    print("1. Add")
+    print("2. Subtract")
+    print("3. Multiply")
+    print("4. Divide")
+    print("5. Percentage")
+
+# Call the calculator menu
+calculator()
+
+choice = input("Enter Choice (1/2/3/4/5): ")
+
+if choice in ('1', '2', '3', '4', '5'):
+    try:
+        x = float(input("Enter first number: "))
+        y = float(input("Enter second number: "))
+    except ValueError:
+        print("Enter valid numeric values!")
+    else:
+        if choice == '1':
+            print("Result:", Add(x, y))
+        elif choice == '2':
+            print("Result:", Subtract(x, y))
+        elif choice == '3':
+            print("Result:", Multiply(x, y))
+        elif choice == '4':
+            print("Result:", Divide(x, y))
+        elif choice == '5':
+            print("Result:", Percentage(x, y))
+else:
+    print("Invalid Operational Choice!")
